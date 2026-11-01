@@ -1,0 +1,850 @@
+{
+  "ApmProject": [
+    {
+      "id": "00000000-0192-0001-0000-000000000001",
+      "name": "Project #1 — Enterprise Primary Record",
+      "description": "Project description configuration (1)",
+      "status": "ACTIVE",
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0001-0000-000000000002",
+      "name": "Project #2 — Enterprise Operations Record",
+      "description": "Project description configuration (2)",
+      "status": "IN_PROGRESS",
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0001-0000-000000000003",
+      "name": "Project #3 — Enterprise Compliance Record",
+      "description": "Project description configuration (3)",
+      "status": "COMPLETED",
+      "isDeleted": false
+    }
+  ],
+  "MfgBom": [
+    {
+      "id": "00000000-0192-0002-0000-000000000001",
+      "bomNumber": "MB-2026-0001",
+      "parentItemId": "00000000-0192-0001-0000-000000000001",
+      "revision": "Bill of Materials revision configuration (1)",
+      "type": "Bill of Materials type configuration (1)",
+      "status": "ACTIVE",
+      "effectiveDate": "2026-11-01T10:00:00Z",
+      "releasedBy": "Bill of Materials releasedBy configuration (1)",
+      "createdAt": "2026-11-01T10:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z",
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0002-0000-000000000002",
+      "bomNumber": "MB-2026-0002",
+      "parentItemId": "00000000-0192-0001-0000-000000000002",
+      "revision": "Bill of Materials revision configuration (2)",
+      "type": "Bill of Materials type configuration (2)",
+      "status": "IN_PROGRESS",
+      "effectiveDate": "2026-11-02T10:00:00Z",
+      "releasedBy": "Bill of Materials releasedBy configuration (2)",
+      "createdAt": "2026-11-02T10:00:00Z",
+      "updatedAt": "2026-11-02T10:00:00Z",
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0002-0000-000000000003",
+      "bomNumber": "MB-2026-0003",
+      "parentItemId": "00000000-0192-0001-0000-000000000003",
+      "revision": "Bill of Materials revision configuration (3)",
+      "type": "Bill of Materials type configuration (3)",
+      "status": "COMPLETED",
+      "effectiveDate": "2026-11-03T10:00:00Z",
+      "releasedBy": "Bill of Materials releasedBy configuration (3)",
+      "createdAt": "2026-11-03T10:00:00Z",
+      "updatedAt": "2026-11-03T10:00:00Z",
+      "isDeleted": false
+    }
+  ],
+  "MfgOrder": [
+    {
+      "id": "00000000-0192-0003-0000-000000000001",
+      "orderNumber": "MO-2026-0001",
+      "itemId": "00000000-0192-0001-0000-000000000001",
+      "bomRevisionId": "00000000-0192-0001-0000-000000000001",
+      "routingRevisionId": "00000000-0192-0001-0000-000000000001",
+      "targetQuantity": 10,
+      "completedQuantity": 10,
+      "scrappedQuantity": 10,
+      "startDate": "2026-11-01T10:00:00Z",
+      "dueDate": "2026-11-01T10:00:00Z",
+      "state": "Production Order state configuration (1)",
+      "createdAt": "2026-11-01T10:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z",
+      "isDeleted": false,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "00000000-0192-0003-0000-000000000002",
+      "orderNumber": "MO-2026-0002",
+      "itemId": "00000000-0192-0001-0000-000000000002",
+      "bomRevisionId": "00000000-0192-0001-0000-000000000002",
+      "routingRevisionId": "00000000-0192-0001-0000-000000000002",
+      "targetQuantity": 20,
+      "completedQuantity": 20,
+      "scrappedQuantity": 20,
+      "startDate": "2026-11-02T10:00:00Z",
+      "dueDate": "2026-11-02T10:00:00Z",
+      "state": "Production Order state configuration (2)",
+      "createdAt": "2026-11-02T10:00:00Z",
+      "updatedAt": "2026-11-02T10:00:00Z",
+      "isDeleted": false,
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "00000000-0192-0003-0000-000000000003",
+      "orderNumber": "MO-2026-0003",
+      "itemId": "00000000-0192-0001-0000-000000000003",
+      "bomRevisionId": "00000000-0192-0001-0000-000000000003",
+      "routingRevisionId": "00000000-0192-0001-0000-000000000003",
+      "targetQuantity": 30,
+      "completedQuantity": 30,
+      "scrappedQuantity": 30,
+      "startDate": "2026-11-03T10:00:00Z",
+      "dueDate": "2026-11-03T10:00:00Z",
+      "state": "Production Order state configuration (3)",
+      "createdAt": "2026-11-03T10:00:00Z",
+      "updatedAt": "2026-11-03T10:00:00Z",
+      "isDeleted": false,
+      "status": "COMPLETED"
+    }
+  ],
+  "MfgProductRevision": [
+    {
+      "id": "00000000-0192-0004-0000-000000000001",
+      "productId": "00000000-0192-0001-0000-000000000001",
+      "revisionCode": "MPR-2026-0001",
+      "lifecycleStage": "Product Revision lifecycleStage configuration (1)",
+      "releasedAt": "2026-11-01T10:00:00Z",
+      "supersedesRevisionId": "00000000-0192-0001-0000-000000000001",
+      "createdAt": "2026-11-01T10:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z",
+      "isDeleted": false,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "00000000-0192-0004-0000-000000000002",
+      "productId": "00000000-0192-0001-0000-000000000002",
+      "revisionCode": "MPR-2026-0002",
+      "lifecycleStage": "Product Revision lifecycleStage configuration (2)",
+      "releasedAt": "2026-11-02T10:00:00Z",
+      "supersedesRevisionId": "00000000-0192-0001-0000-000000000002",
+      "createdAt": "2026-11-02T10:00:00Z",
+      "updatedAt": "2026-11-02T10:00:00Z",
+      "isDeleted": false,
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "00000000-0192-0004-0000-000000000003",
+      "productId": "00000000-0192-0001-0000-000000000003",
+      "revisionCode": "MPR-2026-0003",
+      "lifecycleStage": "Product Revision lifecycleStage configuration (3)",
+      "releasedAt": "2026-11-03T10:00:00Z",
+      "supersedesRevisionId": "00000000-0192-0001-0000-000000000003",
+      "createdAt": "2026-11-03T10:00:00Z",
+      "updatedAt": "2026-11-03T10:00:00Z",
+      "isDeleted": false,
+      "status": "COMPLETED"
+    }
+  ],
+  "MfgQualityInspection": [
+    {
+      "id": "00000000-0192-0005-0000-000000000001",
+      "inspectionNumber": "MQI-2026-0001",
+      "planId": "00000000-0192-0001-0000-000000000001",
+      "sourceLotNumber": "MQI-2026-0001",
+      "inspectorWorkerId": "00000000-0192-0001-0000-000000000001",
+      "overallResult": "Quality Inspection Record overallResult configuration (1)",
+      "inspectedAt": "2026-11-01T10:00:00Z",
+      "createdAt": "2026-11-01T10:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z",
+      "isDeleted": false,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "00000000-0192-0005-0000-000000000002",
+      "inspectionNumber": "MQI-2026-0002",
+      "planId": "00000000-0192-0001-0000-000000000002",
+      "sourceLotNumber": "MQI-2026-0002",
+      "inspectorWorkerId": "00000000-0192-0001-0000-000000000002",
+      "overallResult": "Quality Inspection Record overallResult configuration (2)",
+      "inspectedAt": "2026-11-02T10:00:00Z",
+      "createdAt": "2026-11-02T10:00:00Z",
+      "updatedAt": "2026-11-02T10:00:00Z",
+      "isDeleted": false,
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "00000000-0192-0005-0000-000000000003",
+      "inspectionNumber": "MQI-2026-0003",
+      "planId": "00000000-0192-0001-0000-000000000003",
+      "sourceLotNumber": "MQI-2026-0003",
+      "inspectorWorkerId": "00000000-0192-0001-0000-000000000003",
+      "overallResult": "Quality Inspection Record overallResult configuration (3)",
+      "inspectedAt": "2026-11-03T10:00:00Z",
+      "createdAt": "2026-11-03T10:00:00Z",
+      "updatedAt": "2026-11-03T10:00:00Z",
+      "isDeleted": false,
+      "status": "COMPLETED"
+    }
+  ],
+  "OpsInventoryItem": [
+    {
+      "id": "00000000-0192-0006-0000-000000000001",
+      "sku": "Inventory Item sku configuration (1)",
+      "name": "Inventory Item #1 — Enterprise Primary Record",
+      "description": "Inventory Item description configuration (1)",
+      "category": "Inventory Item category configuration (1)",
+      "uom": "Inventory Item uom configuration (1)",
+      "valuationMethod": "Inventory Item valuationMethod configuration (1)",
+      "reorderPoint": 10,
+      "safetyStock": 10,
+      "status": "ACTIVE",
+      "standardCost": 1250,
+      "trackLots": true,
+      "trackSerials": true,
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0006-0000-000000000002",
+      "sku": "Inventory Item sku configuration (2)",
+      "name": "Inventory Item #2 — Enterprise Operations Record",
+      "description": "Inventory Item description configuration (2)",
+      "category": "Inventory Item category configuration (2)",
+      "uom": "Inventory Item uom configuration (2)",
+      "valuationMethod": "Inventory Item valuationMethod configuration (2)",
+      "reorderPoint": 20,
+      "safetyStock": 20,
+      "status": "IN_PROGRESS",
+      "standardCost": 2500,
+      "trackLots": true,
+      "trackSerials": true,
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0006-0000-000000000003",
+      "sku": "Inventory Item sku configuration (3)",
+      "name": "Inventory Item #3 — Enterprise Compliance Record",
+      "description": "Inventory Item description configuration (3)",
+      "category": "Inventory Item category configuration (3)",
+      "uom": "Inventory Item uom configuration (3)",
+      "valuationMethod": "Inventory Item valuationMethod configuration (3)",
+      "reorderPoint": 30,
+      "safetyStock": 30,
+      "status": "COMPLETED",
+      "standardCost": 3750,
+      "trackLots": false,
+      "trackSerials": false,
+      "isDeleted": false
+    }
+  ],
+  "OpsMaintenanceWorkOrder": [
+    {
+      "id": "00000000-0192-0007-0000-000000000001",
+      "workOrderNumber": "OMWO-2026-0001",
+      "assetId": "00000000-0192-0001-0000-000000000001",
+      "type": "Maintenance Work Order type configuration (1)",
+      "priority": "Maintenance Work Order priority configuration (1)",
+      "status": "ACTIVE",
+      "assignedTechnicianId": "00000000-0192-0001-0000-000000000001",
+      "scheduledDate": "2026-11-01T10:00:00Z",
+      "maintenancePlanId": "00000000-0192-0001-0000-000000000001",
+      "facilityLocationId": "00000000-0192-0001-0000-000000000001",
+      "productionOrderId": "00000000-0192-0001-0000-000000000001",
+      "downtimeId": "00000000-0192-0001-0000-000000000001",
+      "safetyLockoutVerified": true,
+      "actualLaborHours": 10,
+      "actualPartsCost": 1250,
+      "orderNumber": "OMWO-2026-0001",
+      "state": "Maintenance Work Order state configuration (1)",
+      "scheduledStart": "2026-11-01T10:00:00Z",
+      "completedAt": "2026-11-01T10:00:00Z",
+      "createdAt": "2026-11-01T10:00:00Z",
+      "updatedAt": "2026-11-01T10:00:00Z",
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0007-0000-000000000002",
+      "workOrderNumber": "OMWO-2026-0002",
+      "assetId": "00000000-0192-0001-0000-000000000002",
+      "type": "Maintenance Work Order type configuration (2)",
+      "priority": "Maintenance Work Order priority configuration (2)",
+      "status": "IN_PROGRESS",
+      "assignedTechnicianId": "00000000-0192-0001-0000-000000000002",
+      "scheduledDate": "2026-11-02T10:00:00Z",
+      "maintenancePlanId": "00000000-0192-0001-0000-000000000002",
+      "facilityLocationId": "00000000-0192-0001-0000-000000000002",
+      "productionOrderId": "00000000-0192-0001-0000-000000000002",
+      "downtimeId": "00000000-0192-0001-0000-000000000002",
+      "safetyLockoutVerified": true,
+      "actualLaborHours": 20,
+      "actualPartsCost": 2500,
+      "orderNumber": "OMWO-2026-0002",
+      "state": "Maintenance Work Order state configuration (2)",
+      "scheduledStart": "2026-11-02T10:00:00Z",
+      "completedAt": "2026-11-02T10:00:00Z",
+      "createdAt": "2026-11-02T10:00:00Z",
+      "updatedAt": "2026-11-02T10:00:00Z",
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0007-0000-000000000003",
+      "workOrderNumber": "OMWO-2026-0003",
+      "assetId": "00000000-0192-0001-0000-000000000003",
+      "type": "Maintenance Work Order type configuration (3)",
+      "priority": "Maintenance Work Order priority configuration (3)",
+      "status": "COMPLETED",
+      "assignedTechnicianId": "00000000-0192-0001-0000-000000000003",
+      "scheduledDate": "2026-11-03T10:00:00Z",
+      "maintenancePlanId": "00000000-0192-0001-0000-000000000003",
+      "facilityLocationId": "00000000-0192-0001-0000-000000000003",
+      "productionOrderId": "00000000-0192-0001-0000-000000000003",
+      "downtimeId": "00000000-0192-0001-0000-000000000003",
+      "safetyLockoutVerified": false,
+      "actualLaborHours": 30,
+      "actualPartsCost": 3750,
+      "orderNumber": "OMWO-2026-0003",
+      "state": "Maintenance Work Order state configuration (3)",
+      "scheduledStart": "2026-11-03T10:00:00Z",
+      "completedAt": "2026-11-03T10:00:00Z",
+      "createdAt": "2026-11-03T10:00:00Z",
+      "updatedAt": "2026-11-03T10:00:00Z",
+      "isDeleted": false
+    }
+  ],
+  "OpsOperationsAsset": [
+    {
+      "id": "00000000-0192-0008-0000-000000000001",
+      "assetTag": "Operations Asset assetTag configuration (1)",
+      "name": "Operations Asset #1 — Enterprise Primary Record",
+      "serialNumber": "OOA-2026-0001",
+      "assetClass": "Operations Asset assetClass configuration (1)",
+      "facilityId": "00000000-0192-0001-0000-000000000001",
+      "condition": "Operations Asset condition configuration (1)",
+      "status": "ACTIVE",
+      "warrantyExpiry": "2026-11-01T10:00:00Z",
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0008-0000-000000000002",
+      "assetTag": "Operations Asset assetTag configuration (2)",
+      "name": "Operations Asset #2 — Enterprise Operations Record",
+      "serialNumber": "OOA-2026-0002",
+      "assetClass": "Operations Asset assetClass configuration (2)",
+      "facilityId": "00000000-0192-0001-0000-000000000002",
+      "condition": "Operations Asset condition configuration (2)",
+      "status": "IN_PROGRESS",
+      "warrantyExpiry": "2026-11-02T10:00:00Z",
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0008-0000-000000000003",
+      "assetTag": "Operations Asset assetTag configuration (3)",
+      "name": "Operations Asset #3 — Enterprise Compliance Record",
+      "serialNumber": "OOA-2026-0003",
+      "assetClass": "Operations Asset assetClass configuration (3)",
+      "facilityId": "00000000-0192-0001-0000-000000000003",
+      "condition": "Operations Asset condition configuration (3)",
+      "status": "COMPLETED",
+      "warrantyExpiry": "2026-11-03T10:00:00Z",
+      "isDeleted": false
+    }
+  ],
+  "OpsPurchaseOrder": [
+    {
+      "id": "00000000-0192-0009-0000-000000000001",
+      "poNumber": "OPO-2026-0001",
+      "supplierId": "00000000-0192-0001-0000-000000000001",
+      "orderDate": "2026-11-01T10:00:00Z",
+      "totalAmount": 1250,
+      "receivedAmount": 1250,
+      "status": "ACTIVE",
+      "isDeleted": false,
+      "billedAmount": 1250,
+      "matchToleranceRuleId": "00000000-0192-0001-0000-000000000001",
+      "buyerEmployeeId": "00000000-0192-0001-0000-000000000001",
+      "revisionNumber": 10,
+      "sourceRequestId": "00000000-0192-0001-0000-000000000001",
+      "agreementId": "00000000-0192-0001-0000-000000000001",
+      "supplierSiteId": "00000000-0192-0001-0000-000000000001",
+      "legalEntityId": "00000000-0192-0001-0000-000000000001",
+      "deliveryAddress": "Purchase Order deliveryAddress configuration (1)",
+      "promisedDate": "2026-11-01T10:00:00Z",
+      "currency": "USD",
+      "subtotal": "Purchase Order subtotal configuration (1)",
+      "taxAmount": "Purchase Order taxAmount configuration (1)",
+      "paymentTerms": "Purchase Order paymentTerms configuration (1)",
+      "externalRef": "Purchase Order externalRef configuration (1)"
+    },
+    {
+      "id": "00000000-0192-0009-0000-000000000002",
+      "poNumber": "OPO-2026-0002",
+      "supplierId": "00000000-0192-0001-0000-000000000002",
+      "orderDate": "2026-11-02T10:00:00Z",
+      "totalAmount": 2500,
+      "receivedAmount": 2500,
+      "status": "IN_PROGRESS",
+      "isDeleted": false,
+      "billedAmount": 2500,
+      "matchToleranceRuleId": "00000000-0192-0001-0000-000000000002",
+      "buyerEmployeeId": "00000000-0192-0001-0000-000000000002",
+      "revisionNumber": 20,
+      "sourceRequestId": "00000000-0192-0001-0000-000000000002",
+      "agreementId": "00000000-0192-0001-0000-000000000002",
+      "supplierSiteId": "00000000-0192-0001-0000-000000000002",
+      "legalEntityId": "00000000-0192-0001-0000-000000000002",
+      "deliveryAddress": "Purchase Order deliveryAddress configuration (2)",
+      "promisedDate": "2026-11-02T10:00:00Z",
+      "currency": "USD",
+      "subtotal": "Purchase Order subtotal configuration (2)",
+      "taxAmount": "Purchase Order taxAmount configuration (2)",
+      "paymentTerms": "Purchase Order paymentTerms configuration (2)",
+      "externalRef": "Purchase Order externalRef configuration (2)"
+    },
+    {
+      "id": "00000000-0192-0009-0000-000000000003",
+      "poNumber": "OPO-2026-0003",
+      "supplierId": "00000000-0192-0001-0000-000000000003",
+      "orderDate": "2026-11-03T10:00:00Z",
+      "totalAmount": 3750,
+      "receivedAmount": 3750,
+      "status": "COMPLETED",
+      "isDeleted": false,
+      "billedAmount": 3750,
+      "matchToleranceRuleId": "00000000-0192-0001-0000-000000000003",
+      "buyerEmployeeId": "00000000-0192-0001-0000-000000000003",
+      "revisionNumber": 30,
+      "sourceRequestId": "00000000-0192-0001-0000-000000000003",
+      "agreementId": "00000000-0192-0001-0000-000000000003",
+      "supplierSiteId": "00000000-0192-0001-0000-000000000003",
+      "legalEntityId": "00000000-0192-0001-0000-000000000003",
+      "deliveryAddress": "Purchase Order deliveryAddress configuration (3)",
+      "promisedDate": "2026-11-03T10:00:00Z",
+      "currency": "USD",
+      "subtotal": "Purchase Order subtotal configuration (3)",
+      "taxAmount": "Purchase Order taxAmount configuration (3)",
+      "paymentTerms": "Purchase Order paymentTerms configuration (3)",
+      "externalRef": "Purchase Order externalRef configuration (3)"
+    }
+  ],
+  "IndLabProtocol": [
+    {
+      "id": "00000000-0192-0010-0000-000000000001",
+      "protocolCode": "ILP-2026-0001",
+      "title": "Lab Protocol #1 — Enterprise Primary Record",
+      "versionNumber": 10,
+      "domainType": "Lab Protocol domainType configuration (1)",
+      "biosafetyLevel": "Lab Protocol biosafetyLevel configuration (1)",
+      "ghsHazardCodes": [
+        "item-1-a",
+        "item-1-b"
+      ],
+      "stepsSchemaJson": {
+        "configured": true,
+        "tier": 1
+      },
+      "status": "ACTIVE",
+      "version": 1,
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0010-0000-000000000002",
+      "protocolCode": "ILP-2026-0002",
+      "title": "Lab Protocol #2 — Enterprise Operations Record",
+      "versionNumber": 20,
+      "domainType": "Lab Protocol domainType configuration (2)",
+      "biosafetyLevel": "Lab Protocol biosafetyLevel configuration (2)",
+      "ghsHazardCodes": [
+        "item-2-a",
+        "item-2-b"
+      ],
+      "stepsSchemaJson": {
+        "configured": true,
+        "tier": 2
+      },
+      "status": "IN_PROGRESS",
+      "version": 2,
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0010-0000-000000000003",
+      "protocolCode": "ILP-2026-0003",
+      "title": "Lab Protocol #3 — Enterprise Compliance Record",
+      "versionNumber": 30,
+      "domainType": "Lab Protocol domainType configuration (3)",
+      "biosafetyLevel": "Lab Protocol biosafetyLevel configuration (3)",
+      "ghsHazardCodes": [
+        "item-3-a",
+        "item-3-b"
+      ],
+      "stepsSchemaJson": {
+        "configured": true,
+        "tier": 3
+      },
+      "status": "COMPLETED",
+      "version": 3,
+      "isDeleted": false
+    }
+  ],
+  "IndResearchEntity": [
+    {
+      "id": "00000000-0192-0011-0000-000000000001",
+      "registryId": "00000000-0192-0001-0000-000000000001",
+      "name": "Research Entity #1 — Enterprise Primary Record",
+      "entityClass": "Research Entity entityClass configuration (1)",
+      "canonicalSequenceOrSmiles": "Research Entity canonicalSequenceOrSmiles configuration (1)",
+      "structureHashSha256": "Research Entity structureHashSha256 configuration (1)",
+      "molecularWeightDa": 10,
+      "extinctionCoefficient": 10,
+      "biosafetyLevel": "Research Entity biosafetyLevel configuration (1)",
+      "confidentialityTier": "Research Entity confidentialityTier configuration (1)",
+      "lifecycleStage": "Research Entity lifecycleStage configuration (1)",
+      "version": 1,
+      "status": "ACTIVE",
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0011-0000-000000000002",
+      "registryId": "00000000-0192-0001-0000-000000000002",
+      "name": "Research Entity #2 — Enterprise Operations Record",
+      "entityClass": "Research Entity entityClass configuration (2)",
+      "canonicalSequenceOrSmiles": "Research Entity canonicalSequenceOrSmiles configuration (2)",
+      "structureHashSha256": "Research Entity structureHashSha256 configuration (2)",
+      "molecularWeightDa": 20,
+      "extinctionCoefficient": 20,
+      "biosafetyLevel": "Research Entity biosafetyLevel configuration (2)",
+      "confidentialityTier": "Research Entity confidentialityTier configuration (2)",
+      "lifecycleStage": "Research Entity lifecycleStage configuration (2)",
+      "version": 2,
+      "status": "IN_PROGRESS",
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0011-0000-000000000003",
+      "registryId": "00000000-0192-0001-0000-000000000003",
+      "name": "Research Entity #3 — Enterprise Compliance Record",
+      "entityClass": "Research Entity entityClass configuration (3)",
+      "canonicalSequenceOrSmiles": "Research Entity canonicalSequenceOrSmiles configuration (3)",
+      "structureHashSha256": "Research Entity structureHashSha256 configuration (3)",
+      "molecularWeightDa": 30,
+      "extinctionCoefficient": 30,
+      "biosafetyLevel": "Research Entity biosafetyLevel configuration (3)",
+      "confidentialityTier": "Research Entity confidentialityTier configuration (3)",
+      "lifecycleStage": "Research Entity lifecycleStage configuration (3)",
+      "version": 3,
+      "status": "COMPLETED",
+      "isDeleted": false
+    }
+  ],
+  "IndElnEntry": [
+    {
+      "id": "00000000-0192-0012-0000-000000000001",
+      "entryNumber": "IEE-2026-0001",
+      "title": "Eln Entry #1 — Enterprise Primary Record",
+      "confidentialityTier": "Eln Entry confidentialityTier configuration (1)",
+      "regulatedMode": "Eln Entry regulatedMode configuration (1)",
+      "hypothesisAndNotesMd": "Eln Entry hypothesisAndNotesMd configuration (1)",
+      "stoichiometryTableJson": {
+        "configured": true,
+        "tier": 1
+      },
+      "protocolDeviationsJson": {
+        "configured": true,
+        "tier": 1
+      },
+      "referencedEntityIds": [
+        "item-1-a",
+        "item-1-b"
+      ],
+      "consumedSampleJson": {
+        "configured": true,
+        "tier": 1
+      },
+      "contentSha256Digest": "Eln Entry contentSha256Digest configuration (1)",
+      "addendaJson": {
+        "configured": true,
+        "tier": 1
+      },
+      "status": "ACTIVE",
+      "lockedAt": "2026-11-01T10:00:00Z",
+      "version": 1,
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0012-0000-000000000002",
+      "entryNumber": "IEE-2026-0002",
+      "title": "Eln Entry #2 — Enterprise Operations Record",
+      "confidentialityTier": "Eln Entry confidentialityTier configuration (2)",
+      "regulatedMode": "Eln Entry regulatedMode configuration (2)",
+      "hypothesisAndNotesMd": "Eln Entry hypothesisAndNotesMd configuration (2)",
+      "stoichiometryTableJson": {
+        "configured": true,
+        "tier": 2
+      },
+      "protocolDeviationsJson": {
+        "configured": true,
+        "tier": 2
+      },
+      "referencedEntityIds": [
+        "item-2-a",
+        "item-2-b"
+      ],
+      "consumedSampleJson": {
+        "configured": true,
+        "tier": 2
+      },
+      "contentSha256Digest": "Eln Entry contentSha256Digest configuration (2)",
+      "addendaJson": {
+        "configured": true,
+        "tier": 2
+      },
+      "status": "IN_PROGRESS",
+      "lockedAt": "2026-11-02T10:00:00Z",
+      "version": 2,
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0012-0000-000000000003",
+      "entryNumber": "IEE-2026-0003",
+      "title": "Eln Entry #3 — Enterprise Compliance Record",
+      "confidentialityTier": "Eln Entry confidentialityTier configuration (3)",
+      "regulatedMode": "Eln Entry regulatedMode configuration (3)",
+      "hypothesisAndNotesMd": "Eln Entry hypothesisAndNotesMd configuration (3)",
+      "stoichiometryTableJson": {
+        "configured": true,
+        "tier": 3
+      },
+      "protocolDeviationsJson": {
+        "configured": true,
+        "tier": 3
+      },
+      "referencedEntityIds": [
+        "item-3-a",
+        "item-3-b"
+      ],
+      "consumedSampleJson": {
+        "configured": true,
+        "tier": 3
+      },
+      "contentSha256Digest": "Eln Entry contentSha256Digest configuration (3)",
+      "addendaJson": {
+        "configured": true,
+        "tier": 3
+      },
+      "status": "COMPLETED",
+      "lockedAt": "2026-11-03T10:00:00Z",
+      "version": 3,
+      "isDeleted": false
+    }
+  ],
+  "IndStorageHierarchy": [
+    {
+      "id": "00000000-0192-0013-0000-000000000001",
+      "locationCode": "ISH-2026-0001",
+      "name": "Storage Hierarchy #1 — Enterprise Primary Record",
+      "levelType": "Storage Hierarchy levelType configuration (1)",
+      "targetTempC": 10,
+      "gridRows": 10,
+      "gridCols": 10,
+      "occupiedSlots": 10,
+      "emergencyContactPhone": "+1-555-019-2801",
+      "status": "ACTIVE",
+      "version": 1,
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0013-0000-000000000002",
+      "locationCode": "ISH-2026-0002",
+      "name": "Storage Hierarchy #2 — Enterprise Operations Record",
+      "levelType": "Storage Hierarchy levelType configuration (2)",
+      "targetTempC": 20,
+      "gridRows": 20,
+      "gridCols": 20,
+      "occupiedSlots": 20,
+      "emergencyContactPhone": "+1-555-019-2802",
+      "status": "IN_PROGRESS",
+      "version": 2,
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0013-0000-000000000003",
+      "locationCode": "ISH-2026-0003",
+      "name": "Storage Hierarchy #3 — Enterprise Compliance Record",
+      "levelType": "Storage Hierarchy levelType configuration (3)",
+      "targetTempC": 30,
+      "gridRows": 30,
+      "gridCols": 30,
+      "occupiedSlots": 30,
+      "emergencyContactPhone": "+1-555-019-2803",
+      "status": "COMPLETED",
+      "version": 3,
+      "isDeleted": false
+    }
+  ],
+  "IndLabSampleContainer": [
+    {
+      "id": "00000000-0192-0014-0000-000000000001",
+      "barcode": "ILSC-2026-0001",
+      "containerType": "Lab Sample Container containerType configuration (1)",
+      "lotNumber": "ILSC-2026-0001",
+      "gridPosition": "Lab Sample Container gridPosition configuration (1)",
+      "remainingQuantity": 10,
+      "quantityUnit": "Lab Sample Container quantityUnit configuration (1)",
+      "concentrationValue": 1250,
+      "concentrationUnit": "Lab Sample Container concentrationUnit configuration (1)",
+      "freezeThawCycles": 10,
+      "maxAllowedFreezeThaw": 10,
+      "expiresAt": "2026-11-01T10:00:00Z",
+      "status": "ACTIVE",
+      "version": 1,
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0014-0000-000000000002",
+      "barcode": "ILSC-2026-0002",
+      "containerType": "Lab Sample Container containerType configuration (2)",
+      "lotNumber": "ILSC-2026-0002",
+      "gridPosition": "Lab Sample Container gridPosition configuration (2)",
+      "remainingQuantity": 20,
+      "quantityUnit": "Lab Sample Container quantityUnit configuration (2)",
+      "concentrationValue": 2500,
+      "concentrationUnit": "Lab Sample Container concentrationUnit configuration (2)",
+      "freezeThawCycles": 20,
+      "maxAllowedFreezeThaw": 20,
+      "expiresAt": "2026-11-02T10:00:00Z",
+      "status": "IN_PROGRESS",
+      "version": 2,
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0014-0000-000000000003",
+      "barcode": "ILSC-2026-0003",
+      "containerType": "Lab Sample Container containerType configuration (3)",
+      "lotNumber": "ILSC-2026-0003",
+      "gridPosition": "Lab Sample Container gridPosition configuration (3)",
+      "remainingQuantity": 30,
+      "quantityUnit": "Lab Sample Container quantityUnit configuration (3)",
+      "concentrationValue": 3750,
+      "concentrationUnit": "Lab Sample Container concentrationUnit configuration (3)",
+      "freezeThawCycles": 30,
+      "maxAllowedFreezeThaw": 30,
+      "expiresAt": "2026-11-03T10:00:00Z",
+      "status": "COMPLETED",
+      "version": 3,
+      "isDeleted": false
+    }
+  ],
+  "IndAssayResultRun": [
+    {
+      "id": "00000000-0192-0015-0000-000000000001",
+      "runNumber": "IARR-2026-0001",
+      "assayType": "Assay Result Run assayType configuration (1)",
+      "workflowStage": "Assay Result Run workflowStage configuration (1)",
+      "primaryMetricName": "Assay Result Run #1 — Enterprise Primary Record",
+      "primaryMetricValue": 1250,
+      "primaryMetricUnit": "Assay Result Run primaryMetricUnit configuration (1)",
+      "purityOrPassPct": 85,
+      "structuredRowsJson": {
+        "configured": true,
+        "tier": 1
+      },
+      "rawInstrumentFileId": "00000000-0192-0001-0000-000000000001",
+      "rawFileSha256": "Assay Result Run rawFileSha256 configuration (1)",
+      "qcPassed": true,
+      "version": 1,
+      "status": "ACTIVE",
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0015-0000-000000000002",
+      "runNumber": "IARR-2026-0002",
+      "assayType": "Assay Result Run assayType configuration (2)",
+      "workflowStage": "Assay Result Run workflowStage configuration (2)",
+      "primaryMetricName": "Assay Result Run #2 — Enterprise Operations Record",
+      "primaryMetricValue": 2500,
+      "primaryMetricUnit": "Assay Result Run primaryMetricUnit configuration (2)",
+      "purityOrPassPct": 90,
+      "structuredRowsJson": {
+        "configured": true,
+        "tier": 2
+      },
+      "rawInstrumentFileId": "00000000-0192-0001-0000-000000000002",
+      "rawFileSha256": "Assay Result Run rawFileSha256 configuration (2)",
+      "qcPassed": true,
+      "version": 2,
+      "status": "IN_PROGRESS",
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0015-0000-000000000003",
+      "runNumber": "IARR-2026-0003",
+      "assayType": "Assay Result Run assayType configuration (3)",
+      "workflowStage": "Assay Result Run workflowStage configuration (3)",
+      "primaryMetricName": "Assay Result Run #3 — Enterprise Compliance Record",
+      "primaryMetricValue": 3750,
+      "primaryMetricUnit": "Assay Result Run primaryMetricUnit configuration (3)",
+      "purityOrPassPct": 95,
+      "structuredRowsJson": {
+        "configured": true,
+        "tier": 3
+      },
+      "rawInstrumentFileId": "00000000-0192-0001-0000-000000000003",
+      "rawFileSha256": "Assay Result Run rawFileSha256 configuration (3)",
+      "qcPassed": false,
+      "version": 3,
+      "status": "COMPLETED",
+      "isDeleted": false
+    }
+  ],
+  "IndNotebookSignature": [
+    {
+      "id": "00000000-0192-0016-0000-000000000001",
+      "signatureNumber": "INS-2026-0001",
+      "signatureRole": "Notebook Signature signatureRole configuration (1)",
+      "meaningStatement": "Notebook Signature meaningStatement configuration (1)",
+      "reasonForChange": "Notebook Signature reasonForChange configuration (1)",
+      "signedByUserNameSnapshot": "Notebook Signature #1 — Enterprise Primary Record",
+      "signerContactPhone": "+1-555-019-2801",
+      "signedAt": "2026-11-01T10:00:00Z",
+      "entryDigestAtSignSha256": "Notebook Signature entryDigestAtSignSha256 configuration (1)",
+      "version": 1,
+      "status": "ACTIVE",
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0016-0000-000000000002",
+      "signatureNumber": "INS-2026-0002",
+      "signatureRole": "Notebook Signature signatureRole configuration (2)",
+      "meaningStatement": "Notebook Signature meaningStatement configuration (2)",
+      "reasonForChange": "Notebook Signature reasonForChange configuration (2)",
+      "signedByUserNameSnapshot": "Notebook Signature #2 — Enterprise Operations Record",
+      "signerContactPhone": "+1-555-019-2802",
+      "signedAt": "2026-11-02T10:00:00Z",
+      "entryDigestAtSignSha256": "Notebook Signature entryDigestAtSignSha256 configuration (2)",
+      "version": 2,
+      "status": "IN_PROGRESS",
+      "isDeleted": false
+    },
+    {
+      "id": "00000000-0192-0016-0000-000000000003",
+      "signatureNumber": "INS-2026-0003",
+      "signatureRole": "Notebook Signature signatureRole configuration (3)",
+      "meaningStatement": "Notebook Signature meaningStatement configuration (3)",
+      "reasonForChange": "Notebook Signature reasonForChange configuration (3)",
+      "signedByUserNameSnapshot": "Notebook Signature #3 — Enterprise Compliance Record",
+      "signerContactPhone": "+1-555-019-2803",
+      "signedAt": "2026-11-03T10:00:00Z",
+      "entryDigestAtSignSha256": "Notebook Signature entryDigestAtSignSha256 configuration (3)",
+      "version": 3,
+      "status": "COMPLETED",
+      "isDeleted": false
+    }
+  ]
+}
